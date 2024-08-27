@@ -129,15 +129,6 @@ body, html {
     }
 }
 
-@media screen and (max-width: 768px) {
-    .overlay {
-        width: 70%;
-        height: 70%;
-        top: calc(50% - 35%);
-        left: calc(50% - 35%);
-    }
-}
-
 @media screen and (max-width: 480px) {
     .overlay {
         width: 350px;

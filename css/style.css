@@ -1,0 +1,233 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'TT Norms Pro', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background: 
+        linear-gradient(94.48deg, #D862A4 0%, #CC1D9A 25.4%, #016DB4 74.86%, #00B5E0 100%),
+        url('../img/background.jfif') no-repeat center center/cover;
+    background-blend-mode: multiply;
+    color: white;
+    padding: 20px;
+    position: relative; /* Ensure relative positioning for overlay */
+}
+
+.header {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    max-width: 154px;
+}
+
+.content {
+    max-width: 558px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    gap: 56px;
+    position: relative;
+}
+
+.titledesc {
+    gap: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.titledesc .title h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 62px;
+    color: #FFFFFF;
+    max-width: 485px;
+}
+
+.titledesc .description p {
+    font-size: 16px;
+    font-weight: 450;
+    line-height: 20px;
+    color: #E9E9E9;
+    max-width: 494px;
+}
+
+.titledesc .description a {
+    color: #E9E9E9;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #FFFFFF;
+}
+
+.download-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.download-buttons img {
+    max-width: 120px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 6px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+}
+
+.download-buttons img:hover {
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    border-radius: 1000px;
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 70%);
+    opacity: 1;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1440px) {
+    .overlay {
+        width: 90%;
+        height: 90%;
+        top: calc(50% - 45%);
+        left: calc(50% - 45%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .overlay {
+        width: 80%;
+        height: 80%;
+        top: calc(50% - 40%);
+        left: calc(50% - 40%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .overlay {
+        width: 70%;
+        height: 70%;
+        top: calc(50% - 35%);
+        left: calc(50% - 35%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .overlay {
+        width: 350px;
+        height: 350px;
+        top: 251px;
+        left: 22px;
+    }
+}
+
+/* Very small phones (380px and below) */
+@media screen and (max-width: 380px) {
+    .overlay {
+        display: none;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .logo {
+        max-width: 180px;
+    }
+
+    .titledesc {
+        gap: 24px;
+    }
+
+    .titledesc .description p {
+        font-size: 16px;
+    }
+
+    .download-buttons img {
+        max-width: 130px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .titledesc .description p {
+        font-size: 14px;
+    }
+
+    .download-buttons img {
+        max-width: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .titledesc .title h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .titledesc .description{
+        max-width: 270px;
+    }
+    .download-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0px;
+    }
+
+    .download-buttons img {
+        max-width: 120px;
+    }
+}
+
+footer {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    line-height: 16px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

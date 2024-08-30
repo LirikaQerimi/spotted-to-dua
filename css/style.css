@@ -12,22 +12,22 @@ body, html {
 }
 
 .container {
+    height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; /* Space between elements */
     align-items: center;
-    min-height: 100vh;
     background: 
         linear-gradient(94.48deg, #D862A4 0%, #CC1D9A 25.4%, #016DB4 74.86%, #00B5E0 100%),
         url('../img/background.jfif') no-repeat center center/cover;
     background-blend-mode: multiply;
     color: white;
-    padding: 20px;
+    padding: 10px; /* Reduce padding */
     position: relative; /* Ensure relative positioning for overlay */
 }
 
 .header {
-    margin-top: 40px;
+    margin-top: 20px; /* Reduce top margin */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -38,20 +38,20 @@ body, html {
 }
 
 .content {
+    flex-grow: 1;
     max-width: 558px;
     text-align: center;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 2;
-    gap: 56px;
+    gap: 40px; /* Adjust gap */
     position: relative;
 }
 
 .titledesc {
-    gap: 36px;
+    gap: 24px; /* Adjust gap */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,17 +59,17 @@ body, html {
 }
 
 .titledesc .title h1 {
-    font-size: 48px;
+    font-size: 32px; /* Reduce title font size */
     font-weight: 600;
-    line-height: 62px;
+    line-height: 40px;
     color: #FFFFFF;
     max-width: 485px;
 }
 
 .titledesc .description p {
-    font-size: 16px;
+    font-size: 14px; /* Reduce description font size */
     font-weight: 450;
-    line-height: 20px;
+    line-height: 18px;
     color: #E9E9E9;
     max-width: 494px;
 }
@@ -82,7 +82,6 @@ body, html {
 }
 
 .download-buttons {
-    margin-top: 30px;
     display: flex;
     justify-content: center;
     gap: 24px;
@@ -107,11 +106,11 @@ body, html {
     }
 
     .titledesc {
-        gap: 24px;
+        gap: 20px; /* Adjust gap */
     }
 
     .titledesc .description p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .download-buttons img {
@@ -126,7 +125,7 @@ body, html {
     }
 
     .titledesc .description p {
-        font-size: 14px;
+        font-size: 12px; /* Reduce font size */
     }
 
     .download-buttons img {
@@ -134,20 +133,23 @@ body, html {
     }
 }
 
-@media screen and (max-width: 480px) {
-    .content {
-        margin: 0 auto;
-        padding: 0 20px;
+@media screen and (max-width: 500px) {
+    .header {
+        margin-top: 10px; /* Further reduce top margin */
     }
 
     .titledesc .title h1 {
-        font-size: 28px;
-        line-height: 36px;
+        font-size: 24px; /* Further reduce title font size */
+        line-height: 30px;
     }
 
     .titledesc .description{
         max-width: 270px;
     }
+    .titledesc .description p {
+        font-size: 12px; /* Further reduce font size */
+    }
+
     .download-buttons {
         flex-direction: column;
         gap: 10px;
@@ -160,12 +162,12 @@ body, html {
 }
 
 footer {
-    font-size: 12px;
+    font-size: 10px; /* Smaller footer text */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 24px;
-    line-height: 16px;
+    gap: 16px; /* Reduce gap between footer links */
+    line-height: 14px; /* Adjust line height */
 }
 
 footer a {

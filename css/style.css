@@ -59,17 +59,17 @@ body, html {
 }
 
 .titledesc .title h1 {
-    font-size: 32px; /* Reduce title font size */
+    font-size: 48px; /* Revert title font size */
     font-weight: 600;
-    line-height: 40px;
+    line-height: 62px;
     color: #FFFFFF;
     max-width: 485px;
 }
 
 .titledesc .description p {
-    font-size: 14px; /* Reduce description font size */
+    font-size: 16px; /* Revert description font size */
     font-weight: 450;
-    line-height: 18px;
+    line-height: 20px;
     color: #E9E9E9;
     max-width: 494px;
 }
@@ -110,7 +110,7 @@ body, html {
     }
 
     .titledesc .description p {
-        font-size: 14px;
+        font-size: 16px; /* Revert description font size */
     }
 
     .download-buttons img {
@@ -125,7 +125,7 @@ body, html {
     }
 
     .titledesc .description p {
-        font-size: 12px; /* Reduce font size */
+        font-size: 14px; /* Revert description font size */
     }
 
     .download-buttons img {
@@ -139,15 +139,15 @@ body, html {
     }
 
     .titledesc .title h1 {
-        font-size: 24px; /* Further reduce title font size */
-        line-height: 30px;
+        font-size: 28px; /* Revert title font size */
+        line-height: 36px;
     }
 
     .titledesc .description{
         max-width: 270px;
     }
     .titledesc .description p {
-        font-size: 12px; /* Further reduce font size */
+        font-size: 14px; /* Revert description font size */
     }
 
     .download-buttons {
@@ -162,12 +162,12 @@ body, html {
 }
 
 footer {
-    font-size: 10px; /* Smaller footer text */
+    font-size: 12px; /* Revert footer font size */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 16px; /* Reduce gap between footer links */
-    line-height: 14px; /* Adjust line height */
+    line-height: 16px;
 }
 
 footer a {
@@ -179,3 +179,4 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
